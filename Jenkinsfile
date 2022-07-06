@@ -14,7 +14,7 @@ pipeline {
 				python3 -m pip install ipykernel
 				python3 -m ipykernel install --user
 				echo 'Building...'
-				jupyter-nbconvert --execute --to=html Jupyter1.ipynb
+				jupyter-nbconvert --to=html Jupyter1.ipynb
 			      '''
                         }
 		}
