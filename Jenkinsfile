@@ -5,7 +5,7 @@ pipeline {
 		stage('Build'){
 			steps{
 				echo 'Building...'
-				jupyter-nbconvert --execute --to=html ./Jupyter1.ipynb
+				-run: jupyter-nbconvert --execute --to=html ./Jupyter1.ipynb
 			}
 		}
 		stage('Test'){
