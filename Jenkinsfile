@@ -4,9 +4,12 @@ pipeline {
 	stages {
 		stage('Build'){
 			steps{
+                           sh '''
+				#!bin/bash
 				echo 'Building...'
-				-run: jupyter-nbconvert --execute --to=html ./Jupyter1.ipynb
-			}
+				jupyter-nbconvert --execute --to=html Jupyter1.ipynb
+			      '''
+                        }
 		}
 		stage('Test'){
 			steps{
