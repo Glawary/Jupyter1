@@ -6,6 +6,8 @@ pipeline {
 			steps{
                            sh '''
 				#!bin/bash
+				pip install jupyter
+				pip install nbconvert
 				echo 'Building...'
 				jupyter-nbconvert --execute --to=html Jupyter1.ipynb
 			      '''
