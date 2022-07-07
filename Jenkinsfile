@@ -16,6 +16,7 @@ pipeline {
 				echo 'Testing..'
 			}
 		}
+}
                 post {
         always {
               
@@ -23,6 +24,6 @@ pipeline {
      
                }
    }
-}
+
      
 }
