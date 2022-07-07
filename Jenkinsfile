@@ -16,5 +16,12 @@ pipeline {
 				echo 'Testing..'
 			}
 		}
-	}
+                post {
+        always {
+              
+                archiveArtifacts artifacts: '/var/lib/jenkins/workspace/Job3/Ju>
+     
+                 }
+   }
+     
 }
