@@ -19,9 +19,10 @@ pipeline {
                 post {
         always {
               
-                archiveArtifacts artifacts: '/var/lib/jenkins/workspace/Job3/Ju>
+               archiveArtifacts artifacts: '/var/lib/jenkins/workspace/Job3/Jupyter1.html', followSymlinks: false
      
-                 }
+               }
    }
+}
      
 }
