@@ -20,7 +20,7 @@ pipeline {
                 post {
         always {
               
-               archiveArtifacts artifacts: '/var/lib/jenkins/workspace/Job3/Jupyter1.html', followSymlinks: false
+               archiveArtifacts artifacts: '/var/lib/jenkins/workspace/Job3/', followSymlinks: false
      
                }
    }
