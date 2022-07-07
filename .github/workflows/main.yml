@@ -2,7 +2,6 @@ name: Jupyter
 on:
   workflow_dispatch:
    jobs: 
-    job1:
      build:
       runs-on: ubuntu-latest
       steps:
@@ -10,17 +9,15 @@ on:
          uses: actions/checkout@v3
        - name: Setup Python
          uses: actions/setup-python@v4.0.0
-         with:
-          cache: pip
-          python-version: '3.7'
-     test:
-      steps:
+          with:
+           cache: pip
+           python-version: '3.7'
        - name: Install Dependencies 
        - run: pip install -r requirements.txt
        - name: Exeute Notebook 
        - run: jupyter-nbconvert --execute --to=html Jupyter1.ipynb
        - name: Upload a Build Artifact
          uses: actions/upload-artifact@v3.1.0
-         with:
-          name: Artifact
-          path: Jupyter1.html
+          with:
+           name: Artifact
+           path: Jupyter1.html
