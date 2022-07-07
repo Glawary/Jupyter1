@@ -20,7 +20,7 @@ steps:
 - name: Setup Python # Установка python окружения для выполнения задания
 - uses: actions/setup-python@v4.0.0
 with:
-cache: pip
+- cache: pip
 - python-version: '3.7'
 - name: Install Dependencies # Установка зависимостей для Jupyter
 - run: pip install -r requirements.txt
