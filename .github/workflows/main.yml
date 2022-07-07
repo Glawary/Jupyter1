@@ -29,5 +29,5 @@ with:
 - name: Upload a Build Artifact # Выгрузка вывода тетрадки (артефакта задания) в html файл
 - uses: actions/upload-artifact@v3.1.0
 with:
-name: Artifact
-path: Jupyter1.html
+- name: Artifact
+- path: Jupyter1.html
