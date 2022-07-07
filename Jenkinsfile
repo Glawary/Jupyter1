@@ -4,10 +4,10 @@ pipeline {
 	stages {
 		stage('Build'){
 			steps{
-                           pwd
                            sh '''
 				#!bin/bash
 				echo 'Building...'
+                                pwd
 				jupyter-nbconvert --to=html Jupyter1.ipynb
 			      '''
                         }
