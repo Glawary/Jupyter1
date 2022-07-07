@@ -7,7 +7,7 @@ on:
 # На каком образе будет запускаться наш сценарий: по умолчанию стоит Ubuntu, оставляем.
      runs-on: ubuntu-latest
 # Шаги представляют собой последовательность задач, которые будут выполняться как часть задания
-     steps:
+      steps:
        - name: Checkout 
        - uses: actions/checkout@v3
        - name: Setup Python
@@ -16,7 +16,7 @@ on:
         cache: pip
         python-version: '3.7'
     test:
-     steps:
+      steps:
        - name: Install Dependencies 
        - run: pip install -r requirements.txt
        - name: Exeute Notebook 
