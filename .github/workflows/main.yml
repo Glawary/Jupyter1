@@ -9,19 +9,19 @@ build:
 runs-on: ubuntu-latest
 # Шаги представляют собой последовательность задач, которые будут выполняться как часть задания
 steps:
-- name: Checkout # Извлечение репозитория в $GITHUB_WORKSPACE, чтобы задание могло получить к нему доступ
-  uses: actions/checkout@v3
-- name: Setup Python # Установка python окружения для выполнения задания
-  uses: actions/setup-python@v4.0.0
+- name: Checkout 
+- uses: actions/checkout@v3
+- name: Setup Python
+- uses: actions/setup-python@v4.0.0
 with:
 cache: pip
 python-version: '3.7'
-- name: Install Dependencies # Установка зависимостей для Jupyter
+- name: Install Dependencies 
 - run: pip install -r requirements.txt
-- name: Exeute Notebook # Выполнение тетрадки Jupyter
-- run: jupyter-nbconvert --execute plot_iris_exercise.ipynb --to html
-- name: Upload a Build Artifact # Выгрузка вывода тетрадки (артефакта задания) в html файл
-uses: actions/upload-artifact@v3.1.0
+- name: Exeute Notebook 
+- run: jupyter-nbconvert --execute --to=html Jupyter1.ipynb
+- name: Upload a Build Artifact
+- uses: actions/upload-artifact@v3.1.0
 with:
 name: Artifact
-path: plot_iris_exercise.html
+path: Jupyter1.html
