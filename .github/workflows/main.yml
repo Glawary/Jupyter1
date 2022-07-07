@@ -2,16 +2,13 @@ name: Jupyter
 on:
   workflow_dispatch:
    jobs:
-# Этот сценарий содержит одно задание с именем "build"
     build:
-# На каком образе будет запускаться наш сценарий: по умолчанию стоит Ubuntu, оставляем.
      runs-on: ubuntu-latest
-# Шаги представляют собой последовательность задач, которые будут выполняться как часть задания
       steps:
        - name: Checkout 
-       - uses: actions/checkout@v3
+         uses: actions/checkout@v3
        - name: Setup Python
-       uses: actions/setup-python@v4.0.0
+         uses: actions/setup-python@v4.0.0
        with:
         cache: pip
         python-version: '3.7'
@@ -22,7 +19,7 @@ on:
        - name: Exeute Notebook 
        - run: jupyter-nbconvert --execute --to=html Jupyter1.ipynb
        - name: Upload a Build Artifact
-       - uses: actions/upload-artifact@v3.1.0
+         uses: actions/upload-artifact@v3.1.0
        with:
-        name: Artifact
-        path: Jupyter1.html
+         name: Artifact
+         path: Jupyter1.html
