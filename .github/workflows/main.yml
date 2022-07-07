@@ -16,9 +16,9 @@ runs-on: ubuntu-latest
 # Шаги представляют собой последовательность задач, которые будут выполняться как часть задания
 steps:
 - name: Checkout # Извлечение репозитория в $GITHUB_WORKSPACE, чтобы задание могло получить к нему доступ
-- uses: actions/checkout@v3
+  uses: actions/checkout@v3
 - name: Setup Python # Установка python окружения для выполнения задания
-- uses: actions/setup-python@v4.0.0
+  uses: actions/setup-python@v4.0.0
 with:
 - cache: pip
 - python-version: '3.7'
@@ -27,7 +27,7 @@ with:
 - name: Exeute Notebook # Выполнение тетрадки Jupyter
 - run: jupyter-nbconvert --execute Jupyter1.ipynb --to html
 - name: Upload a Build Artifact # Выгрузка вывода тетрадки (артефакта задания) в html файл
-- uses: actions/upload-artifact@v3.1.0
+  uses: actions/upload-artifact@v3.1.0
 with:
-- name: Artifact
-- path: Jupyter1.html
+  name: Artifact
+  path: Jupyter1.html
