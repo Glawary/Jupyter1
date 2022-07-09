@@ -3,4 +3,7 @@ nbconvert
 numpy
 matplot
 sklearn
+ipykernel
+
+
 
