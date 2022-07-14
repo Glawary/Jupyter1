@@ -1,9 +1,5 @@
 pipeline {
 	agent any
-        environment {
-           KAGGLE_USERNAME=glawary
-           KAGGLE_KEY=a22b67aa142e4274d1374d2382700567
-        }
 	stages {
 		stage('Build'){
 			steps{
@@ -12,7 +8,7 @@ pipeline {
 				echo 'Building...'
                                 pwd
                                 pip3 install -r requirements.txt
-                                pip install kaggle       
+                                pip3 install kaggle       
 			      '''
             
                             sh '''
