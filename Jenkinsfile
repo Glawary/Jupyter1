@@ -19,7 +19,7 @@ pipeline {
                               git config --global user.email "E9315717@yandex.ru"
                               git add .
                               git commit -m "New files"
-                              git push -u origin main
+                              git push origin main
                               ~/.local/bin/kaggle kernels push
                                '''
                         }
