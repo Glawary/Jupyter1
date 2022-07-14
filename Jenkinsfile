@@ -9,7 +9,9 @@ pipeline {
 				echo 'Building...'
                                 pwd
                                 pip3 install -r requirements.txt
-                                pip install kaggle         
+                                pip install kaggle
+                                export KAGGLE_USERNAME=glawary
+                                export KAGGLE_KEY=a22b67aa142e4274d1374d2382700567         
 			      '''
             
                             sh '''
