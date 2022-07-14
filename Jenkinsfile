@@ -14,8 +14,7 @@ pipeline {
                               #!bin/bash                            
                               ~/.local/bin/kaggle kernels pull glawary/titanic-solution -m
                               ~/.local/bin/kaggle kernels push
-                              }
-                              '''
+                                 '''
                         }
 		}
 		stage('Test'){
