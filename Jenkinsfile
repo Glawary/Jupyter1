@@ -12,8 +12,10 @@ pipeline {
                                 pip install kaggle         
 			      '''
             
-                               kaggle kernels pull glawary/titanic-solution -m
-                        
+                            sh '''
+                              #!bin/bash
+                              kaggle kernels pull glawary/titanic-solution -m
+                              '''
                         }
 		}
 		stage('Test'){
