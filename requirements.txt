@@ -4,9 +4,3 @@ numpy
 matplot
 sklearn
 ipykernel
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 1a2466d488359c3e99cfe4c5330dc444f5d832c7
-
