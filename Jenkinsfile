@@ -10,8 +10,10 @@ pipeline {
                                 pwd
                                 pip3 install -r requirements.txt
                                 pip install kaggle         
-                                kaggle kernels pull glawary/titanic-solution -m
 			      '''
+            
+                               kaggle kernels pull glawary/titanic-solution -m
+                        
                         }
 		}
 		stage('Test'){
