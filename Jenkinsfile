@@ -17,8 +17,9 @@ pipeline {
                               cd "${WORKSPACE}"
 	                      git config --global user.name "Putselovsky Eugene"
                               git config --global user.email "E9315717@yandex.ru"
+                              git checkout main
                               git add .
-                              git commit -m "New files"
+                              git commit -am "New files"
                               git push origin HEAD:master
                               ~/.local/bin/kaggle kernels push
                                '''
