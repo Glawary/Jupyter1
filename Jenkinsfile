@@ -23,7 +23,6 @@ pipeline {
                               sh '''
                                 #!bin/bash
 				echo 'Testing..'
-                                jupyter-nbconvert --execute --to=html titanic-solution.ipynb
                               '''
 			}
 		}
@@ -31,7 +30,7 @@ pipeline {
                 post {
         always {
               
-               archiveArtifacts artifacts: 'titanic-solution.html', followSymlinks: false
+               archiveArtifacts artifacts: 'Jupyter1.html', followSymlinks: false
      
                }
    }
