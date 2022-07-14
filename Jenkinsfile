@@ -13,7 +13,11 @@ pipeline {
                             sh '''
                               #!bin/bash
                               ~/.local/bin/kaggle competitions download -c titanic
-                              ~/.local/bin/kaggle kernels pull glawary/titanic-solution -m
+                              ~/.local/bin/kaggle kernels pull glawary/titanic-solution -p /home/eugene/jupyter1/Jupyter1/ -m
+                              cd ~/jupyter1/Jupyter1/
+                              git add .
+                              git commit -m "1"
+                              git push origin
                               ~/.local/bin/kaggle kernels push
                               '''
                         }
