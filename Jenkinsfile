@@ -9,9 +9,8 @@ pipeline {
 				echo 'Building...'
                                 pwd
                                 pip3 install -r requirements.txt
-                                pip install --user kaggle
-                                pwd 
-                                kaggle competitions list                             
+                                pip3 install --user kaggle
+                                pwd                            
                                 kaggle kernels pull glawary/titanic-solution -m
 			      '''
                         }
