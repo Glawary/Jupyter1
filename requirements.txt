@@ -4,3 +4,5 @@ numpy
 matplot
 sklearn
 ipykernel
+kaggle
+--user kaggle
