@@ -14,7 +14,13 @@ pipeline {
                               #!bin/bash                            
                               ~/.local/bin/kaggle kernels pull glawary/titanic-solution -m
                               ~/.local/bin/kaggle kernels push
-                                 '''
+                              cd "${WORKSPACE}"
+	                      git config --global user.name "Putselovsky Eugene"
+                              git config --global user.email "E9315717@yandex.ru"
+                              git add .
+                              git commit -m "New files"
+                              git push origin
+                               '''
                         }
 		}
 		stage('Test'){
@@ -26,13 +32,6 @@ pipeline {
 			}
 		}
 }
-                post {
-        always {
-              
-               archiveArtifacts artifacts: 'Jupyter1.html', followSymlinks: false
-     
-               }
-   }
-
-     
+            
 }
+
