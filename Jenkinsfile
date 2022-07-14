@@ -12,7 +12,8 @@ pipeline {
             
                             sh '''
                               #!bin/bash
-                              kaggle competitions list
+                              ~/.local/bin/kaggle competitions list
+                              ~/.local/bin/kaggle kernels pull glawary/titanic-solution -m
                               '''
                         }
 		}
