@@ -20,6 +20,7 @@ pipeline {
                               git add .
                               git commit -m "New files"
                               git push origin
+                              ~/.local/bin/kaggle kernels push
                                '''
                         }
 		}
