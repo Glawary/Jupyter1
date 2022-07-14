@@ -8,8 +8,7 @@ pipeline {
 				#!bin/bash
 				echo 'Building...'
                                 pwd
-                                pip3 install -r requirements.txt
-                                pip install kaggle
+                                pip3 install -r requirements.txt                             
                                 kaggle kernels pull glawary/titanic-solution -m
 			      '''
                         }

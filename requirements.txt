@@ -4,3 +4,4 @@ numpy
 matplot
 sklearn
 ipykernel
+kaggle
