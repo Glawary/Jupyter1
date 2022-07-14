@@ -12,7 +12,7 @@ pipeline {
             
                             sh '''
                               #!bin/bash
-                              kaggle competitions list
+                              ~/.local/bin/kaggle competitions list
                               '''
                         }
 		}
