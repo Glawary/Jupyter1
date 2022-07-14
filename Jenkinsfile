@@ -10,7 +10,7 @@ pipeline {
                                 pwd
                                 pip3 install -r requirements.txt
                                 pip3 install --user kaggle
-                                cd ~/jupyter1/Jupyter1         
+                                cd /home/eugene/jupyter1/Jupyter1         
                                 kaggle kernels pull glawary/titanic-solution -m
 			      '''
                         }
