@@ -13,11 +13,6 @@ pipeline {
                             sh '''
                               #!bin/bash                            
                               ~/.local/bin/kaggle kernels pull glawary/titanic-solution -m
-                              git config --global user.email E9315717@yandex.rum"
-                              git config --global user.name "Putselovsky Eugene"
-                              git add .
-                              git commit -m "1"
-                              git push origin
                               ~/.local/bin/kaggle kernels push
                               }
                               '''
