@@ -13,7 +13,7 @@ pipeline {
                             sh '''
                               #!bin/bash
                               ~/.local/bin/kaggle competitions list
-                              ~/.local/bin/kaggle kernels pull glawary/titanic-solution -m
+                              ~/.local/bin/kaggle kernels pull glawary/titanic-solution -p /home/eugene/jupyter1/Jupyter1 -m
                               '''
                         }
 		}
