@@ -1,8 +1,8 @@
 pipeline {
 	agent any
         environment {
-           export KAGGLE_USERNAME=glawary
-           export KAGGLE_KEY=a22b67aa142e4274d1374d2382700567
+           KAGGLE_USERNAME=glawary
+           KAGGLE_KEY=a22b67aa142e4274d1374d2382700567
         }
 	stages {
 		stage('Build'){
