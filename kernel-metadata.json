@@ -9,7 +9,9 @@
   "enable_gpu": false,
   "enable_internet": false,
   "keywords": [],
-  "dataset_sources": [],
+  "dataset_sources": [
+    "datasets/nasa/kepler-exoplanet-search-results"
+  ],
   "kernel_sources": [],
   "competition_sources": [
     "competitions/titanic"
